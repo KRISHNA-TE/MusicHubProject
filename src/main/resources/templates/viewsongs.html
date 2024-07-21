@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>View Songs</title>
+<link rel="stylesheet" href="viewsongs.css">
+</head>
+<body>
+<header>
+<nav>
+	<div class="logo">
+		<h4>MusicHub</h4>
+		<h3>Welcome to ViewSongs..!</h3>
+	</div>
+</nav>
+<div class="container">
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Artist</th>
+				<th>Generic</th>
+				<th>Play</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="song:${songs}">
+				<td th:text="${song.name}"></td>
+				<td th:text="${song.artist}"></td>
+				<td th:text="${song.generic}"></td>
+				<td>
+					<audio controls>
+						<source th:src="${song.link}" type="audio/mpeg">
+					</audio>
+					
+				</td>
+			</tr>		
+		</tbody>	
+	</table>
+</div>
+</header>
+</body>
+</html>

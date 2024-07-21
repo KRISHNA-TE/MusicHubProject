@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Create PlayList</title>
+<link rel="stylesheet" href="createplaylist.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo">
+			<h4>MusicHub</h4>
+			<h3>Welcome to PlayList..!</h3>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<form action="addplaylist" method="post">
+	
+		<div class="input-box">
+			<label>Playlist Name:</label>
+			<input type="text" name="name"><br><br>
+		</div>
+	
+	<!-- - --Using for each Loop--->
+	<div class="wrap-box">
+		<div th:each="song:${songs}">							
+			<input type="checkbox" th:name="songs" th:value="${song.id}">
+			<label th:text="${song.name}"></label>
+		</div><br>
+	</div>	
+		<div class="button-box">	
+			<input type="submit" value="ADD PLAYLIST">
+		</div>	
+		</form>
+	</div>
+</header>	
+</body>
+</html>

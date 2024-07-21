@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" href="login.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<header>
+<nav>
+	<div class="logo">
+		<h4>MusicHub</h4>
+		<h3>Welcome to MusicHub..!</h3>
+	</div>
+</nav>	
+<div class="container">
+	<form action="/validate" method="post">							
+		<h2>Login Form</h2>
+		
+		<div class="input-box"> 
+			<label>Email:</label>
+		 <input type="email" name="email">
+		 <i class='bx bxs-user'></i> <br>
+		 </div>
+		 
+		 <div class="input-box">
+		 <label>Password:</label>
+		 <input type="password" name="password">
+		 <i class='bx bxs-lock-alt' ></i><br>
+		 </div>
+		 
+		 <div class="remember-forget">
+		 <label><input type="checkbox"/>Remember me</label>
+		 <a href="#">Forgot password?</a>
+		 </div>
+		 
+		 <div class="button">
+		 <input type="Submit" name="LOGIN">
+		 </div>
+		 <div class="register-link">
+		 	<p>Don't have an account?<a href="register">Register</a></p>
+		 </div> 
+	</form>
+</div>
+</header>
+</body>
+</html>

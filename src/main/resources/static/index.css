@@ -1,0 +1,115 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+header{
+	width:100%;
+	height:100vh;
+	font-family:  cursive;
+	background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(musical_notes_2-wallpaper-2560x1440.jpg);
+	background-size: cover;
+}
+
+nav{
+	width:100%;
+	height:100px;
+	color:black;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.logo{
+	font-size: 3em;
+	letter-spacing: 2px;
+	color: white;
+	
+}
+.logo h4{
+	line-height:20px;
+	color:transparent;
+	-webkit-text-stroke:1px #fff;
+	background: url(back.png);
+	-webkit-background-clip:text;
+	background-position:0 0;
+	animation:back 20s linear infinite;
+}
+@keyframes back{
+	100%{
+	background-position:2000px 0;		
+	}	
+}
+	
+.menu a{
+	text-decoration: none;
+	color:white;
+	padding:10px 20px;
+	font-size: 20px;
+	position: relative;
+}
+.menu a:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	width:0%;
+	height: 100%;
+	border-bottom: 2px solid #3535ff; 
+	transition:0.4s linear;
+}
+.menu a:hover:before{
+	width: 90%;
+}
+.signup a{
+	text-decoration: none;
+	color:white;
+	padding:10px 20px;
+	font-size: 20px;
+	background: #3535ff;	
+	border-radius: 5px;
+	transition:0.4s;
+	
+}
+.signup a:hover{
+	background: transparent;
+	border:1px solid #3535ff;
+	
+}
+.h-txt{
+	max-width:650px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	text-align: center;	
+	color:white;
+}
+.h-txt span{
+	letter-spacing: 5px;
+}
+.h-txt h3{
+	font-size: 3.5em;
+}
+.h-txt input{
+	font-family:cursive;
+	position:relative;
+	background:#3535ff;
+	color:white;
+	padding:10px 20px;
+	letter-spacing: 5px;
+	border:none;
+	border-radius: 5px;
+	transition:0.4s;
+}
+.h-txt input:hover{
+	background: transparent;
+	border:1px solid #3535ff;
+}
+
+
+
+
+
+
+
+

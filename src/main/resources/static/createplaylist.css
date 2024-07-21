@@ -1,0 +1,129 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:cursive;
+}
+header{
+	width:100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(musical_notes_2-wallpaper-2560x1440.jpg);
+	background-size: cover;
+	background-position:center;
+}
+.logo{
+	align-items:center;
+	box-sizing:border-box;
+	font-size: 2em;
+	letter-spacing: 5px;
+	color: white;
+	padding:20px 20px; 
+	gap:15%;
+}
+.logo h3{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.logo h4{
+	padding:0px 150px;
+}
+.container{
+	color:white;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background:transparent;
+	backdrop-filter:blur(40px);
+	width:25%;
+	padding:40px 50px;
+}
+.container label{
+	font-size: 25px;
+}
+.container .input-box{
+	width:100%;
+	color:white;
+}
+.input-box input{
+	width:100%;
+	height: 100%;
+	background: transparent;
+	outline:none;
+	border:2px solid rgba(255,255,255,0.2);
+	border-radius:40px;
+	color:white;
+	margin-top:5px;
+	padding:20px 45px 20px 20px;
+}
+.wrap-box{
+	padding:10px;
+	gap:55%;
+}
+
+.wrap-box input[type="checkbox"]{
+	appearance:none;
+	-webkit-appearance:none;
+	height:20px;
+	width:22px;
+	background-color: #d5d5d5;
+	border-radius: 2px;
+	cursor:pointer;
+	outline:none;
+}
+
+.wrap-box label{
+	font-size:20px;
+	margin-right:10%;
+}
+.wrap-box input[type="checkbox"]:after{
+	font-family:"Font Awesome 6 Free";
+	content:"\f00c";
+	padding:2.5px;
+	font-weight: 900;
+	font-size: 20px;
+	color:white;
+	display:none;	
+}
+.wrap-box input[type="checkbox"]:hover{
+	background-color: #a5a5a5;
+}
+.wrap-box input[type="checkbox"]:checked{
+	background-color: #3535ff;
+}
+.wrap-box input[type="checkbox"]:checked:after{
+	display: block;
+}
+
+.button-box input{
+	position:relative;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background:#3535ff;
+	color:white;
+	left:15%;
+	outline:none;
+	border:none;
+	padding:10px 30px ;
+	letter-spacing: 5px;
+	border-radius: 5px;
+	transition: 0.4s;
+}
+.button-box input:hover{
+	background:transparent;
+	border:1px solid #3535ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+

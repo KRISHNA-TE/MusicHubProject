@@ -1,0 +1,118 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:cursive;
+}
+header{
+	width:100%;
+	height:250vh;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(musical_notes_2-wallpaper-2560x1440.jpg);
+	background-size: cover;
+	background-position:center;
+	color:white;
+}
+.logo{
+	align-items: center;
+	letter-spacing: 5px;
+	font-size:2em;
+	padding:10px 20px;
+	color:white;
+}
+.logo h3{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo h4{
+	padding:10px 150px;
+}
+
+.container{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	background:transparent;
+	padding:0px 20px 10px 10px;
+	backdrop-filter:blur(20px);
+	box-sizing: border-box;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+.container table {
+	width: 100%;
+	height: 100%;
+	align-items:space-between;
+	border-radius:10px;
+	background-color: #fff2;
+	border-collapse: collapse;
+}
+tbody tr:nth-child(even){
+	background-color: #0000000e;
+}
+tbody tr:hover{
+	background-color: #fff1;
+}
+thead th{
+	text-align: center;
+	background-color: #6f6fff;
+	border-radius: 10px;
+}
+table, th, td {
+	padding: 15px;
+	text-align: left;
+}
+audio-box{
+	
+}
+audio {
+	width:100%;
+	padding:0px 40px 10px 10px;
+	border: none;
+	color: white;
+	text-align: center; 
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+ audio::-webkit-media-controls-panel{
+	background-color:#6262ff;
+}
+audio::-webkit-media-controls-play-button{
+	background-color: lightblue;
+	border-radius:50%;
+}
+audio::-webkit-media-controls-current-time-display{
+	color:#585858;
+}
+audio::-webkit-media-controls-remaining-time-display{
+	color:#585858;
+}
+
+audio::-webkit-media-controls-timeline{
+	background-color: #6161ff;
+	border-radius:50px;
+}
+audio::-webkit-media-controls-volume-slider{
+	background-color: #6464ff;
+	border-radius:50px;
+	padding-left:10px;
+}
+audio::-webkit-media-controls-mute-button{
+	background-color:#3535ff;
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+

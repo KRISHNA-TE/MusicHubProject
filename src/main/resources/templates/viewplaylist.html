@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ViewPLaylist Page</title>
+<link rel="stylesheet" href="viewplaylist.css">
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo">
+			<h4>MusicHub</h4>
+			<h3>Welcome to PlayList..!</h3>
+		</div>
+	</nav>
+<div class="container">
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Songs</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="playlist:${playlist}">
+				<td th:text="${playlist.name}"></td>
+				<td>
+				<div class="song-box">
+					<ul>
+						<li th:each= "song:${playlist.songs}">
+							<span th:text ="${song.name}"></span>
+							<span th:text ="${song.artist}"></span>
+						<audio controls>
+							<source th:src="${song.link}" type="audio/mpeg">
+						</audio>
+						</li>
+					</ul>
+					</div>
+				</td>
+			</tr>		
+		</tbody>		
+	</table>
+</div>	
+</header>	
+</body>
+</html>
